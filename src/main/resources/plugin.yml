@@ -1,0 +1,3 @@
+name: ScaLoader
+version: 1.0
+main: cf.retvoid.scaloader.ScaLoader
