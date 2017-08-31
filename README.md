@@ -9,8 +9,8 @@ any plugins written in Scala to function.
 ### Libraries
 This plugin downloads the following 2 libraries by default:
 
-- [scala-library-2.12.2.jar](http://mvnrepository.com/artifact/org.scala-lang/scala-library/2.12.2)
-- [scala-reflect-2.12.2.jar](http://mvnrepository.com/artifact/org.scala-lang/scala-reflect/2.12.2)
+- [scala-library-2.12.3.jar](http://mvnrepository.com/artifact/org.scala-lang/scala-library/2.12.3)
+- [scala-reflect-2.12.3.jar](http://mvnrepository.com/artifact/org.scala-lang/scala-reflect/2.12.3)
 
 Other libraries can be registered from other plugins using
 `LibraryRegistry.registerLibrary()`.
@@ -19,7 +19,7 @@ Other libraries can be registered from other plugins using
 
 ```java
 public void onEnable() {
-    LibraryRegistry.registerLibrary("Scala Library 2.12.2", new URL("http://central.maven.org/maven2/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.jar"), this);
+    LibraryRegistry.registerLibrary("Scala Library 2.12.3", new URL("http://central.maven.org/maven2/org/scala-lang/scala-library/2.12.3/scala-library-2.12.3.jar"), this);
 }
 ```
 
@@ -27,11 +27,14 @@ A `HashMap` of all libraries and their filenames is stored in
 `LibraryRegistry.libraries`.
 
 ### Changelog:
-v1.1
+v1.1-2.12.3
+- Updated Scala 2.12.2 -> 2.12.3
+
+v1.1-2.12.2
 - Added ability to register libraries from other plugins
 - Updated Scala 2.11.8 -> 2.12.2
 
-v1.0
+v1.0-2.11.8
 - Initial release
 
 ### License

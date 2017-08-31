@@ -23,8 +23,10 @@ public class ScaLoader extends JavaPlugin {
                 log.info("Library directory does not exist, creating it now...");
                 Files.createDirectory(libDir);
             }
-            LibraryRegistry.registerLibrary("Scala Library 2.12.2", new URL("http://central.maven.org/maven2/org/scala-lang/scala-library/2.12.2/scala-library-2.12.2.jar"), this);
-            LibraryRegistry.registerLibrary("Scala Reflect 2.12.2", new URL("http://central.maven.org/maven2/org/scala-lang/scala-reflect/2.12.2/scala-reflect-2.12.2.jar"), this);
+
+            LibraryRegistry.registerLibrary("Scala Library 2.12.3", new URL("http://central.maven.org/maven2/org/scala-lang/scala-library/2.12.3/scala-library-2.12.3.jar"), this);
+            LibraryRegistry.registerLibrary("Scala Reflect 2.12.3", new URL("http://central.maven.org/maven2/org/scala-lang/scala-reflect/2.12.3/scala-reflect-2.12.3.jar"), this);
+
             Files.list(libDir).forEach(p -> {
                 String filename = p.getFileName().toString();
                 if (!LibraryRegistry.libraries.containsValue(filename)) {
